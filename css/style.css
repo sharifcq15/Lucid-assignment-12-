@@ -1,0 +1,408 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  background-image: url("../images/banner_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+.nav-item {
+  padding: 0px 7px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+  padding: 0%;
+  position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background: rgb(0, 142, 214);
+  transition: all 0.6s ease-in-out 0s;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background: rgb(0, 142, 214);
+  transition: all 0.6s ease-in-out 0s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  height: 2px;
+  width: 47%;
+  background: rgb(0, 142, 214);
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -5px;
+  height: 2px;
+  width: 47%;
+  background: rgb(0, 142, 214);
+}
+
+.banner_text {
+  min-height: 90vh;
+  align-items: center;
+}
+
+.banner_text h5 {
+  color: rgb(11, 90, 135);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.banner_text h1 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 20px 0px;
+}
+
+.banner_text p {
+  color: rgb(153, 153, 153);
+  margin-bottom: 75px;
+}
+
+.banner_text a {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(153, 153, 153);
+  background: transparent;
+  padding: 8px 25px;
+  margin-left: 5px;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.banner_text a:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 142, 214);
+}
+
+.banner_image img {
+  position: absolute;
+  right: 6%;
+  bottom: 0px;
+}
+
+.feature {
+  text-align: center;
+  padding: 80px 0;
+  border-bottom: 1px solid #999;
+}
+
+.feature h5 {
+  color: rgb(0, 142, 214);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.feature h1 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 12px;
+}
+
+.feature h1::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -25px;
+  height: 2px;
+  width: 40%;
+  background: rgb(0, 142, 214);
+  transition: all 0.6s ease-in-out 0s;
+  opacity: 0;
+}
+
+.feature h1::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -25px;
+  height: 2px;
+  width: 40%;
+  background: rgb(0, 142, 214);
+  transition: all 0.6s ease-in-out 0s;
+  opacity: 0;
+}
+
+.feature h1:hover::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -25px;
+  height: 2px;
+  width: 49%;
+  background: rgb(0, 142, 214);
+  opacity: 1;
+}
+
+.feature h1:hover::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -25px;
+  height: 2px;
+  width: 49%;
+  background: rgb(0, 142, 214);
+  opacity: 1;
+}
+
+.icon_item {
+  height: 90px;
+  width: 90px;
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 50%;
+  line-height: 90px;
+  font-size: 30px;
+  color: rgb(0, 142, 214);
+  margin: auto;
+}
+
+.feature h3 {
+  margin: 20px 0px 15px;
+  font-size: 20px;
+}
+
+.feature p {
+  color: rgb(153, 153, 153);
+}
+
+.beautiful {
+  padding: 80px 0;
+}
+
+.beautiful h5 {
+  color: rgb(0, 142, 214);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 60px;
+}
+
+.beautiful h1 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 12px;
+}
+
+.beautiful h1::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -20px;
+  height: 2px;
+  width: 7%;
+  background: rgb(0, 142, 214);
+  transition: all 0.6s ease-in-out 0s;
+}
+
+.beautiful h1::after {
+  content: "";
+  position: absolute;
+  right: 85%;
+  bottom: -20px;
+  height: 2px;
+  width: 7%;
+  background: rgb(0, 142, 214);
+  transition: all 0.6s ease-in-out 0s;
+}
+
+
+.beautiful p {
+  color: rgb(153, 153, 153);
+  padding: 30px 0;
+}
+
+.icon_beautiful {
+  height: 20px;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.beautiful ul {
+  list-style: none;
+}
+
+.beautiful ul li {
+  display: flex;
+  line-height: 40px;
+  align-items: center;
+}
+
+.icon_beauty {
+  height: 40px;
+  width: 50px;
+  color: rgb(0, 142, 214);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.super_easy {
+  background: rgb(242, 242, 242);
+}
+
+.super_easy {
+  padding: 80px 0px;
+}
+
+.super_easy h5 {
+  color: rgb(0, 142, 214);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 60px;
+}
+
+.super_easy h1 {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.super_easy h1::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -20px;
+  height: 2px;
+  width: 7%;
+  background: rgb(0, 142, 214);
+  transition: all 0.6s ease-in-out 0s;
+}
+
+.super_easy h1::after {
+  content: "";
+  position: absolute;
+  right: 85%;
+  bottom: -20px;
+  height: 2px;
+  width: 7%;
+  background: rgb(0, 142, 214);
+  transition: all 0.6s ease-in-out 0s;
+}
+.super_easy p {
+  color: rgb(153, 153, 153);
+  margin-bottom: 75px;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background-image: url("../images/testimonial_bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+}
+
+.testimonial h5 {
+  color: rgb(0, 142, 214);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.testimonial h1 {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  color: rgb(255, 255, 255);
+}
+
+.design span {
+  display: block;
+  display: inline-block;
+  height: 2px;
+  width: 70px;
+  background: rgb(0, 142, 214);
+}
+
+.testimonial p {
+  font-size: 19px;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.client-img {
+  margin-right: 20px;
+}
+.client_id h4 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.client_id h3 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.client-img_exception {
+height: 100px;
+width: 100px;
+margin-right: 10px;
+display: flex;
+align-items: center;
+}
+
+.client-img_exception img {
+  border-radius: 50%;
+}
+
+.client-img_custom {
+height: 100px;
+width: 100px;
+display: flex;
+align-items: center;
+}
